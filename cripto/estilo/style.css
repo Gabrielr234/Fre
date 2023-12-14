@@ -284,3 +284,26 @@ a {
 .input-group .btn {
     margin: px;
 }
+
+/* cards*/
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card_header,
+.card_body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card_header {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.card--secundary .card_header {
+    background: var(--color-secundary);
+    color: var(--color-white);
+}
