@@ -164,6 +164,11 @@ a {
     height: 30px;
 }
 
+icon--big{
+    width: 50px;
+    height: 50px;
+}
+
 .icon--primary {
 
     fill: var(--color-primary);
@@ -212,7 +217,7 @@ a {
 
 }
 
-.btn--stretched{
+.btn--stretched {
     padding-left: 6rem;
     padding-right: 6rem;
 }
@@ -485,35 +490,61 @@ plan .list__item {
     border-radius: 5px;
 }
 
-.callout--primary{
+.callout--primary {
     background: var(--color-primary);
     color: var(--color-white);
 }
 
-.callout__heading{
+.callout__heading {
     margin-top: 0;
     color: var(--color-white);
     font-size: 3rem;
 }
 
-.callout .btn{
-justify-self: center;
-align-self: center;
+.callout .btn {
+    justify-self: center;
+    align-self: center;
 }
 
-.callout__content{
-text-align: center;
+.callout__content {
+    text-align: center;
 }
 
-@media screen and (min-width:768px){
-    .callout .grid--1x2{
+@media screen and (min-width:768px) {
+    .callout .grid--1x2 {
         grid-template-columns: 1fr auto;
     }
-    .callout__content{
+
+    .callout__content {
         text-align: left;
     }
-    .callout.btn{
+
+    .callout.btn {
         justify-self: start;
         margin: 0 2rem;
     }
+}
+
+
+/* collapsibles*/
+
+.collapsible_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible_heading {
+    margin-top: 0;
+}
+
+.collapsible_content {
+    display: none;
+}
+
+.collapsible--expanded .collapsible__chevron{
+    transform: rotate(90deg);
+}
+
+.collapsible--expanded .collapsible_content{
+    display:block
 }
