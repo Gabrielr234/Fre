@@ -557,3 +557,40 @@ plan .list__item {
     max-width: 100vh;
 
 }
+
+
+/* blocks */
+
+.container {
+    max-width: 1150px;
+    ;
+    margin: 0 auto;
+}
+
+.block {
+    --padding-vertical: 6rem;
+    padding: var(--padding-vertical) 2rem;
+    border: 3px solid red;
+}
+
+.block__header {
+    text-align: center;
+}
+
+.block_heading {
+    margin-top: 0;
+}
+
+.block--dark {
+    background: #000;
+    color: #7b858b;
+}
+
+.block--dark .block_heading {
+    color: var(--color-white)
+}
+
+.block-skewed-left {
+    clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 80%);
+    padding-bottom: calc(var(--padding-vertical)+4rem);
+}
