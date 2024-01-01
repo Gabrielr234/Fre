@@ -774,3 +774,31 @@ plan .list__item {
         order:2;
     }
 }
+
+/* Showcase*/
+
+.showcase_heading{
+    color: var(--color-white);
+    margin: 0 0 2;
+    text-align: center;
+}
+
+.showcase_content .media{
+    margin-top: 2.5rem;
+}
+
+.showcase_image img {
+    width: 100%;
+}
+
+.showcase_content .media_title{
+    color: var(--color-white);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:768px){
+    .showcase .grid{
+        margin-top: 6rem;
+    }
+}
