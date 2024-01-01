@@ -558,6 +558,7 @@ plan .list__item {
 
 .collapsible_heading {
     margin-top: 0;
+    color: var(--color-white);
 }
 
 .collapsible_content {
@@ -586,7 +587,6 @@ plan .list__item {
 
 .container {
     max-width: 1150px;
-    ;
     margin: 0 auto;
 }
 
@@ -597,6 +597,7 @@ plan .list__item {
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block_heading {
@@ -757,7 +758,7 @@ plan .list__item {
     margin: 12rem 0;
 }
 
-.feature:first-of-type{
+.feature:first-of-type {
     margin-top: 6rem;
 }
 
@@ -769,21 +770,21 @@ plan .list__item {
     width: 100%;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
     .feature:nth-of-type(even) .feature_content {
-        order:2;
+        order: 2;
     }
 }
 
 /* Showcase*/
 
-.showcase_heading{
+.showcase_heading {
     color: var(--color-white);
     margin: 0 0 2;
     text-align: center;
 }
 
-.showcase_content .media{
+.showcase_content .media {
     margin-top: 2.5rem;
 }
 
@@ -791,14 +792,91 @@ plan .list__item {
     width: 100%;
 }
 
-.showcase_content .media_title{
+.showcase_content .media_title {
     color: var(--color-white);
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width:768px){
-    .showcase .grid{
+@media screen and (min-width:768px) {
+    .showcase .grid {
         margin-top: 6rem;
+    }
+}
+
+
+/*Footer*/
+.footer {
+    background: #232323;
+}
+
+.footer a {
+    color: #777;
+    transition: 0.3s;
+}
+
+
+.footer a:hover{
+    color:var(--color-white);
+}
+
+.footer__section {
+    padding: 2rem;
+    border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+    margin: 0;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer__brand {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: 2.1rem;
+    color: var(--color-white);
+    opacity: 0.3;
+    margin-top: 0;
+}
+
+.footer__brand img{
+width: 100%;
+max-width: 230px;
+}
+
+
+
+@media Screen and (min-width:768px) {
+    .footer .grid {
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    }
+
+    .footer .collapsible__chevron{
+        display: none;
+    }
+
+    .footer .collapsible_content {
+        opacity: 1;
+        max-height: 100%;
+        font-size: 1.5rem;
+    }
+
+    .footer__brand {
+        order: -1;
+        margin-top: 1rem;
+    }
+
+    .footer__section{
+        border: 0;
+    }
+    .footer__heading{
+        font-size: 2rem;
     }
 }
